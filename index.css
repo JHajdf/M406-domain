@@ -1,0 +1,189 @@
+    @charset "utf-8";
+    /* CSS Document */
+    
+    *,
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    html,
+    body {
+        font-size: 62.5%;
+        color: #333;
+        width: 100%;
+        min-width: 640px;
+        font-family: Helvetica Neue, PingFang SC, Microsoft YaHei, Helvetica, Arial, sans-serif;
+        background: #fff;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    ul,
+    li {
+        list-style: none;
+    }
+    
+    .main {
+        width: 720px;
+        margin: 0 auto;
+    }
+    
+    .header {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        right: 0;
+        top: 0;
+        padding: 1rem 0;
+        background: #fff;
+        z-index: 10;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo {
+        color: #333;
+        font-size: 2.2rem;
+        line-height: 3rem;
+        font-weight: bold;
+    }
+    
+    .menu {
+        display: flex;
+    }
+    
+    .menu li {
+        margin-left: 3rem;
+    }
+    
+    .menu a {
+        color: #333;
+        display: block;
+        font-size: 1.4rem;
+    }
+    
+    .menu a:hover {
+        text-decoration: underline;
+    }
+    
+    .banner {
+        position: relative;
+        z-index: 3;
+        line-height: 0;
+        margin-top: 5rem;
+    }
+    
+    .banner img {
+        width: 100%;
+    }
+    
+    .content {
+        padding: 2rem;
+    }
+    
+    .content h3 {
+        font-size: 2rem;
+        line-height: 2.6rem;
+    }
+    
+    .content .txt {
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        margin: 1rem 0 2rem;
+    }
+    
+    .icon {
+        text-align: center;
+    }
+    
+    .icon img {
+        width: 18rem;
+    }
+    
+    .icon h4 {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    
+    footer {
+        margin: 0 2rem;
+        padding: 2rem 0;
+        border-top: 1px solid #ccc;
+        text-align: center;
+        font-size: 1.6rem;
+        line-height: 3rem;
+    }
+    
+    footer h4 {
+        font-size: 2.4rem;
+        line-height: 200%;
+    }
+    
+    .privacy {
+        padding: 5rem 8rem;
+        color: #333;
+    }
+    
+    .privacy h1 {
+        text-align: center;
+        font-size: 3rem;
+        line-height: 6rem;
+        margin-bottom: 2rem;
+    }
+    
+    .privacy p {
+        font-size: 1.6rem;
+        line-height: 3.2rem;
+        margin-top: 1rem;
+    }
+    
+    .privacy li {
+        margin-top: 2rem;
+    }
+    
+    .privacy h3 {
+        font-size: 2.4rem;
+        line-height: 3rem;
+        margin: 3rem 0 1rem;
+    }
+    
+    .privacy h4 {
+        font-size: 2rem;
+        line-height: 2.6rem;
+        margin: 2rem 0 1rem;
+    }
+    
+    @media screen and (max-width: 640px) {
+        html,
+        body {
+            min-width: 100%;
+        }
+        nav {
+            display: block;
+            padding: 0 1rem;
+        }
+        .menu {
+            margin-top: 1rem;
+            display: block;
+        }
+        .menu li {
+            margin-left: 0;
+            line-height: 2.4rem;
+        }
+        .banner {
+            margin-top: 13rem;
+        }
+        .main {
+            width: 100%;
+        }
+        .privacy {
+            padding: 5rem 3rem;
+        }
+    }

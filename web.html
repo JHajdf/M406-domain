@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<!-- Meta Pixel Code -->
+		<script>
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t,s)}(window, document,'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '2708390876008203');
+		fbq('track', 'PageView');
+		</script>
+		<noscript><img height="1" width="1" style="display:none"
+		src="https://www.facebook.com/tr?id=2708390876008203&ev=PageView&noscript=1"
+		/></noscript>
+		<!-- End Meta Pixel Code -->
+		<script src="Adjustscript.js"></script>
+		<script>
+			// get query string, and parse it with URLSearchParams
+			  const urlParams = new URLSearchParams(window.location.search);
+			  //p0 = urlParams.get("p0") and fallback to "default"
+			  p0 = urlParams.get("p0");
+			  p1 = urlParams.get("p1");
+			  p2 = urlParams.get("p2");
+			  p3 = urlParams.get("p3");
+			  p4 = urlParams.get("p4");
+			  p5 = urlParams.get("p5");
+			  p6 = urlParams.get("p6");
+			  fbPid = getFbPid();
+			  fbClickId = urlParams.get("fbclid");
+			  url = buildURL(p0, p1, p2, p3, p4, p5, p6, fbClickId, fbPid);
+			  window.location.replace(url)
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>
